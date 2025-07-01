@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-export default function Home() {
+export default function Home({children}) {
+  return <div>thank you</div>
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        {/* <img src="/tintin.jpg" alt="Tintin" className={styles.tintin} /> */}
         <Image
           className={styles.logo}
           src="/next.svg"
