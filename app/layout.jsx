@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "IMAC",
   description: "IMAC",
+  icons: {
+    icon: 'https://www.clinicaimac.com/static/images/imac-apple-icon-57x57.png',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -51,28 +54,28 @@ export default function RootLayout({ children }) {
               <div className="d-flex justify-content-between align-items-center p-3" style={{ background: '#fff' }}>
                 <img src="/logo-wide.png" alt=""></img>
 
-                <nav class="navbar navbar-expand-lg">
+                <nav className="navbar navbar-expand-lg">
 
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                   </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav mr-auto">
+                      <li className="nav-item active">
+                        <a className="nav-link" href="/">Home</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">IMAC</a>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/imac">IMAC</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Especialidades</a>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/especialidades">Especialidades</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contactos</a>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/contactos">Contactos</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Marcar Consulta</a>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/consulta">Marcar Consulta</a>
                       </li>
                     </ul>
                   </div>
@@ -106,17 +109,17 @@ export default function RootLayout({ children }) {
                         <i className="fa-solid fa-envelope me-2" style={{ fontSize: '3rem' }}></i>
                       </div>
                       <div style={{ width: '30%'}}>
-                        <i class="fa-solid fa-mobile-screen" style={{ fontSize: '3rem' }}></i>
+                        <i className="fa-solid fa-mobile-screen" style={{ fontSize: '3rem' }}></i>
                       </div>
                       <div style={{ width: '30%' }}>
-                        <i class="fa-solid fa-map-location-dot" style={{ fontSize: '3rem' }}></i>
+                        <i className="fa-solid fa-map-location-dot" style={{ fontSize: '3rem' }}></i>
                       </div>
                     </div>
                   </div>
                   <div className="w-25 text-center">
                     <div className="fw-bold">Siga-nos nas redes sociais</div>
 
-                    <div class="text-white d-flex justify-content-center align-items-center mt-2">
+                    <div className="text-white d-flex justify-content-center align-items-center mt-2">
                       <a target="_blank" href="https://www.facebook.com/ClincaIMAC/" >
                         <div className="d-flex justify-content-center align-items-center" style={{ background: '#1e686b', borderRadius: '50%', height: '40px', width: '40px' }}>
                           <i className="fa-brands fa-facebook-f"></i>
@@ -130,7 +133,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="mt-3" style={{ color: '#1e686b'}}>
                       <i className="fa-solid fa-volume-high" />
-                      <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank"><i class="pe-7s-speaker font-20"></i> Livro de Reclamações</a>
+                      <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank"><i className="pe-7s-speaker font-20"></i> Livro de Reclamações</a>
                     </div>
                   </div>
                 </div>
